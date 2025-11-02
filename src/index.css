@@ -1,0 +1,37 @@
+body {
+  background-color: #0d1117;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+  background: #111;
+  padding: 10px 20px;
+  align-items: center;
+}
+.navbar .brand { font-weight: 700; color: #fff; margin-right: 12px; }
+.navbar a { color: #ddd; text-decoration: none; margin-right: 8px; }
+.navbar .right { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.movie-card {
+  background: #222;
+  padding: 10px;
+  border-radius: 6px;
+}
+.movie-card img { width: 100%; border-radius: 4px; display: block; }
+.movie-card .movie-info { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+
+.details { display: flex; gap: 16px; align-items: flex-start; }
+.details img { border-radius: 6px; }
+button { background: #2563eb; color: white; border: none; padding: 6px 10px; border-radius: 6px; cursor: pointer; }
+input { padding: 6px 8px; border-radius: 6px; border: 1px solid #333; background: #111; color: #fff; }
