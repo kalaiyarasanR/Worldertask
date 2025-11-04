@@ -10,7 +10,7 @@ export default function Home() {
   // const [upcoming, setUpcoming] = useState([]);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
-  const {popular, top, now, upcoming} = useSelector((state) => state.movie.allMovies || {});
+  const {popular, top, now, upcoming} = useSelector((state) => state.movie?.allMovies || {});
   const {popular:popularFilter, top:topFilter, now:nowFilter, upcoming:upcomingFilter} = useSelector((state) => state.movie.filterMovies || {});
   console.log('popular data',popular);
   useEffect(() => {

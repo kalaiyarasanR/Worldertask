@@ -8,7 +8,7 @@ import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
 import Favorites from "./pages/Favorites";
 import MovieDetails from "./pages/Movies/MovieDetails";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function PrivateRoute({ children }) {
   const { user } = useAuth();
   return user ? children : <Navigate to="/login" replace />;

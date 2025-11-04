@@ -1,7 +1,6 @@
 import React,{useRef}  from "react";
 import { useDispatch } from "react-redux";
 import { updateSearch } from "../store/MovieSlice";
-
 function SearchInput() {
     const dispatch = useDispatch();
     const searchInputRef = useRef();
